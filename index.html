@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome - Iconos -->
+  <script src="https://kit.fontawesome.com/5ad1bdbea5.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/css/styles.css">
+
+  <title>Atomizer</title>
+</head>
+<body>
+  <header>
+    <img id="img-portada" src="./img/portada/portada-mobile atomizer.jpg" alt="portada con logo">
+    <!-- <button class="btn btn-ato"><i class="fas fa-angle-down"></i>Conocer más</button>  -->
+    <a href="#contacto" class="btn btn-ato no-select"><i class="fas fa-angle-down"></i>Conocer más</a> 
+  </header>
+  <main>  
+    <a class="btn-arriba" href="#img-portada"><i class="fas fa-arrow-up"></i></a>   <!-- BOTON FIJO PARA IR ARRIBA -->
+    
+    <section class="separador">
+      <div class="separador_linea"></div>
+      <i class="fas fa-chevron-down"></i>
+      <div class="separador_linea"></div>
+    </section>
+    
+    <section id="seleccion">
+      <h1>Qué especialización te interesa?</h1>
+      <div class="opcion">
+        <img class="no-select" src="./img/opcion-fuego.jpeg" alt="Opcion contra incendios">
+        <div class="bloque-texto txt-der">
+          <h2>Equipos para extinción</h2>
+          <p>Económico, portable y ecológico. Perfecto para un pronto ataque y comenzar a enfriar rapidamente mientras se despliegan las lineas de mayor caudal. El complemento ideal para autobombas o para pequeñas unidades de agil desplazamiento.</p>
+          <a href="Contra-Incendios.html" class="btn btn-rojo no-select">Visitar</a>
+        </div>
+      </div>
+      <div class="opcion">
+        <img class="no-select" src="./img/opcion-agua.jpeg" alt="Opcion alta presion">
+        <div class="bloque-texto txt-izq">
+          <h2>Equipos de alta presión</h2>
+          <p>Superiores a 1000 Bar con piezas europeas. Garantizamos horas constantes de uso y el máximo rendimiento para los rubros más exigentes. Servicio de reparación y repuestos.</p>
+          <a href="Alta-Presion.html" class="btn btn-azul no-select">Visitar</a>
+        </div>
+      </div>
+    </section>
+    
+    <section id="socios">  
+      <h2>¿Te interesa comercializar nuestros equipos?</h2>
+      <p class="negrita">Buscamos formar un grupo en donde la profesionalidad y la calidad humana resalte a la par que el nivel de nuestros equipos.</p>
+      <p>Ponete en contacto con nosotros, comentanos tu zona, tus experiencias y escucharemos tus propuestas.</p>
+      <a href="#contacto" class="btn btn-ato">CONTACTANOS</a>   
+    </section>
+
+    <section id="info-perez">
+      <img class="intocable" src="img/ing-perez.jpeg" alt="Foto de Luis Perez">
+      <div class="descripcion-perez">
+        <h3>ING. LUIS A. PÉREZ</h3>
+        <p>Ingeniero en seguridad ambiental, Licenciado en higiene y seguridad en el trabajo, ex bombero voluntario de Gral. San Martín. Más de 10 años de experiencia en el diseño y desarrollo de equipos de alta presión y pionero de la extinción de fuegos con agua atomizada.</p>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Estemos en contacto</h2>
+      <p class="contacto_descripcion">Whatsapp es el método más ágil y simple. Estamos acá para ayudarte, tu consulta nunca nos molestaría.</p>
+      <div class="contacto_cuerpo">
+        <p class="contacto_info">* Todos los campos son requeridos.</p>
+        <form>
+          <input class="active-ato" type="text" name="nombre" placeholder="Nombre" required>
+          <br>
+          <input class="chico active-ato" type="tel" name="tel" placeholder="Teléfono">
+
+          <input class="chico active-ato" type="email" name="mail" placeholder="Email" required>
+          <br>
+          <textarea class="active-ato" type="text" name="texto" placeholder="Su mensaje" required></textarea>
+          <br>
+          <button class="btn-relleno relleno-ato no-selecionable">Enviar <i class="fas fa-arrow-right"></i></button>
+        </form>
+
+        <div class="contacto_separador"></div>
+
+        <div class="contacto_items">
+          <div class="contacto_item">
+            <h3 class="color-ato intocable">Whatsapp</h3>
+            <p><span>+54 9</span> 11 4411 - 6090</p>        
+            <button class="btn-relleno btn-mini relleno-ato no-selecionable">Mostrar QR</button>
+          </div>
+          <div class="contacto_item"> 
+            <h3 class="color-ato intocable">Email</h3>
+            <p>info@atomizer.com.ar</p>
+          </div>
+          <div class="contacto_item">
+            <h3 class="color-ato intocable">Ubicación</h3>
+            <p>Ciudad Autónoma de Buenos Aires, <br> Argentina</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> 
+  <footer>
+    <div class="columnas">
+      <div class="columna">
+        <h4>Atomizer</h4>
+        <div class="linea"></div>
+        <p>Somos una empresa especializada en la construcción y diseño de equipos de agua a alta presión que pueden implementarse en diferentes áreas de la industria.</p>
+      </div>
+      <div class="columna servicios">
+        <h4>Servicios</h4>
+        <div class="linea"></div>
+        <a href="./Contra-Incendios.html">Extinción</a>
+        <br>
+        <a href="./Alta-Presion.html">Alta Presión</a>
+      </div>
+      <div class="columna">
+        <h4>Contacto</h4>
+        <div class="linea"></div>
+        <p>info@atomizer.com.ar</p>
+        <p><span>+54 9</span> 11 4411 - 6090</p>
+        <p>Ciudad Autónoma de Buenos Aires. <br> Argentina.</p>
+        <a href="index.html">atomizer.com.ar</a> <!--  TAL VEZ TENGA QUE NAVEGAR A LA PORTADA ESTA VEZ  -->
+      </div>
+    </div>
+
+    <div class="separacion"></div>
+
+    <p class="envios">Realizamos envíos a todo el país y América Latina.</p>
+    <p class="copyright">CopyrightⒸ 2021 Atomizer. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>

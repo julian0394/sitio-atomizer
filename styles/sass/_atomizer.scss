@@ -1,0 +1,92 @@
+
+#seleccion {
+  max-width: 400px;
+
+  h1 {
+    margin: 0;
+  }
+
+  .opcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem 0;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    background-color: white;
+    padding-bottom: 1rem;
+  }
+
+  img {
+    width: 95%;
+    margin: .5rem auto;
+  }
+
+  .bloque-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+      margin: 1rem;
+    }
+    
+    p {
+      margin: 1rem 1rem;
+      text-align: center;
+    }
+    
+    .btn {
+      margin: 1rem auto;
+    }
+  }
+}
+
+#socios {
+  margin: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.2rem;
+  border-top: 1px solid #bebebe;
+
+  p {
+    margin: .3rem;
+  }
+
+  .btn {
+    margin: 1.5rem auto;
+  }
+}
+
+#info-perez {
+  background-color: $color-neutro-oscuro;
+  margin: 0;
+  padding: 2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    object-fit: cover;
+  }
+
+  h3 {
+    color: $color-atomizer;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+
+  p {
+    padding: 0 1rem;
+    line-height: 1.5rem;
+    color: #bebebe;
+    font-style: italic;
+  }
+}
+

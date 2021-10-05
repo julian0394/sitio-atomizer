@@ -1,0 +1,395 @@
+/* 
+  TABLA DE CONTENIDOS
+    1. Variables - colores
+    2. Estilos globales generales
+    3. Componentes
+    4. Estilos generales y por bloques compartidos
+    5. Fragmentos de otras paginas
+*/
+
+// 1. Variables - colores
+$color-atomizer: #239DDB;
+$color-atomizer-hover: #39a6dd;
+$color-atomizer-active: #1876a5;
+
+$color-fuego: #F27272;
+$color-fuego-hover: #ff8484;
+$color-fuego-active: #e05b5b;
+
+$color-agua: #345AD5;
+$color-agua-hover: #4a6ee6;
+$color-agua-active: #2d4db4;
+
+$color-fondo-claro: #EEF0F2;
+$color-neutro-oscuro: #2B2B30;
+$color-neutro-claro: #73777F;
+
+
+// 2. Estilos globales generales
+* {
+  box-sizing: border-box; 
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $color-fondo-claro;
+}
+
+::selection {
+  color: white;
+  background-color: $color-agua-active;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+section, footer {
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+// 3. Componentes
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #181b2f;
+  color: white;
+  font-size: .8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 15px;
+  transition: all .3s ease;
+
+  i {
+    font-size: 12rem;
+    padding-right: .3rem;
+  }
+
+  &:hover {
+    color: black;
+  }
+}
+
+// Color de los bordes de los botones según la página
+  .btn-ato {
+    border: 3px solid $color-atomizer;
+
+    &:hover {
+      background-color: $color-atomizer;
+    }
+  }
+
+  .btn-rojo {
+    border: 3px solid $color-fuego;
+
+    &:hover {
+      background-color: $color-fuego;
+    }
+  }
+
+  .btn-azul {
+    border: 3px solid $color-agua;
+
+    &:hover {
+      background-color: $color-agua;
+      color: white;
+    }
+  }
+
+.btn-relleno {
+  background-color: #2B2B30;
+  color: white;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  transition: all .3s ease;
+  font-weight: bold;
+  font-size: .8rem;
+  text-transform: uppercase;
+
+  i {
+    padding-left: .5rem;
+  }
+}
+
+.btn-mini {
+  padding: .5rem;
+}
+
+// Color de los botones rellenos
+  .relleno-ato {
+    background-color: $color-atomizer;
+
+    &:hover {
+      background-color: $color-atomizer-hover;
+    }
+
+    &:active {
+      background-color: $color-atomizer-active;
+    }
+  }
+
+  .relleno-rojo {
+    background-color: $color-fuego;
+
+    &:hover {
+      background-color: $color-fuego-hover;
+    }
+
+    &:active {
+      background-color: $color-fuego-active;
+    }
+  }
+
+  .relleno-azul {
+    background-color: $color-agua;
+
+    &:hover {
+      background-color: $color-agua-hover;
+    }
+
+    &:active {
+      background-color: $color-agua-active;
+    }
+  }
+
+.separador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-neutro-oscuro;
+  font-size: 2rem;
+  // margin: 1rem 0;
+
+  .separador_linea {
+    width: 15%;
+    border-bottom: 3px dashed $color-neutro-oscuro;
+    margin: 0 1rem;
+  }
+}
+
+.btn-arriba {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  height: 2rem;
+  width: 2rem;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 50%;
+  box-shadow: 3px 2px 8px #00000065;
+  color: $color-neutro-claro;
+  font-size: 1.3rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all .3s ease;
+
+  &:active, &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: $color-neutro-claro;
+    border: $color-neutro-claro;
+    color: white;
+  }
+
+}
+
+// #modal {
+
+// }
+
+
+
+// 4. Estilos generales y por bloques compartidos
+// Bloques o secciones
+header {
+  position: relative;
+
+  #img-portada {
+    width: 100%;
+    max-height: 40vh;
+    object-fit: cover;
+  }
+
+  .btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: .8rem;
+  
+    i {
+      font-size: 1.4em;
+      margin-right: 0.3rem;
+    }
+  
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+#contacto {
+  padding: 1rem;
+
+  .contacto_info {
+    color: $color-neutro-claro;
+    font-style: italic
+  }
+
+  form {
+    padding-bottom: 1rem;
+
+    input, textarea {
+      width: 100%;
+      margin: .5rem 0;
+      padding: .8rem;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+    
+    textarea {
+      resize: vertical;
+      height: 6rem;
+    }
+  }
+  
+  .contacto_separador {
+    width: 50%;
+    margin: 2rem auto;
+    border-bottom: 1px solid gray;
+  }
+
+  .contacto_item {
+    margin: 2rem 0;
+    
+    h3, p {
+      margin: 0;
+    }
+    
+    h3 {
+      padding-bottom: .8rem;
+    }
+
+    button {
+      margin-top: .8rem;
+    }
+
+    span {
+      color: #969696;
+      font-style: italic;
+    }
+  }
+}
+// Bordes de distintos colores según página
+  .active-ato:focus { // Uso outline para que no haga el sutil salto al aumentar 1px al borde
+    border: 1px solid $color-atomizer !important; 
+    outline: 1px solid $color-atomizer; 
+  }
+  
+  .active-rojo:focus {
+    border: 2px solid $color-fuego !important;
+    outline: 1px solid $color-fuego; 
+  }
+  
+  .active-azul:focus {
+    border: 2px solid $color-agua !important;
+    outline: 1px solid $color-agua;
+  }
+
+// Colores de los títulos e íconos según página
+  .color-ato {
+    color: $color-atomizer;
+  }
+  .color-rojo {
+    color: $color-fuego;
+  }
+  .color-azul {
+    color: $color-agua;
+  }
+
+footer {
+  background-color: $color-neutro-oscuro;
+  color: $color-fondo-claro;
+
+  .columna {
+    margin-bottom: 2rem;
+
+    h4 {
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 40%;
+      border-bottom: 1px dashed white;
+      margin-bottom: 1rem;
+    }
+  
+    a {
+      display: inline-block;
+      color: $color-fondo-claro;
+      margin-bottom: .5rem;
+      text-decoration: underline;
+      font-style: italic;
+    }
+
+    p {
+      margin-bottom: .5rem;
+    }
+
+    span {
+      color: $color-neutro-claro;
+    }
+  }
+
+  .separacion {
+    width: 80%;
+    height: 1rem;
+    margin: 0 auto;
+    border-bottom: 1px solid gray;
+  }
+
+  .envios, .copyright {
+    text-align: center;
+    margin: 1.5rem;
+  }
+
+  .copyright {
+    color: $color-neutro-claro;
+  }
+}
+
+// Estilos
+.no-select {
+  user-select: none;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.link-activo {
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: default;
+  pointer-events: none;
+}
+
+
+// 5. Fragmentos de otras paginas
+@import './atomizer';
+@import './contraIncendios';
+@import './altaPresion';
+
+// TABLA DE CONTENIDOS
