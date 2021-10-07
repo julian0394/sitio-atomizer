@@ -1,17 +1,16 @@
 
 #seleccion {
-  max-width: 400px;
-
-  h1 {
-    margin: 0;
+  .caja {
+    max-width: 500px;
   }
 
   .opcion {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 1rem 0;
-    border: 1px solid rgb(221, 221, 221);
+    border: 1px solid #dddddd;
     border-radius: 5px;
     background-color: white;
     padding-bottom: 1rem;
@@ -25,7 +24,7 @@
   .bloque-texto {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 
     h2 {
       margin: 1rem;
@@ -43,31 +42,38 @@
 }
 
 #socios {
-  margin: 0;
   background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1.2rem;
   border-top: 1px solid #bebebe;
+  padding: 2rem 0;
 
-  p {
-    margin: .3rem;
-  }
-
-  .btn {
-    margin: 1.5rem auto;
-  }
+  .socios_cuerpo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    p {
+      margin: .3rem;
+    }
+  
+    .btn {
+      margin: 1.5rem 0;
+    }
+  }  
 }
 
 #info-perez {
   background-color: $color-neutro-oscuro;
-  margin: 0;
-  padding: 2rem 1.2rem;
+  padding: 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   img {
     border-radius: 50%;

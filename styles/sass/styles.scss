@@ -31,6 +31,10 @@ $color-neutro-claro: #73777F;
   font-family: 'Roboto', sans-serif;
 }
 
+html {
+  font-size: 18px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -46,8 +50,10 @@ h1, h2 {
   text-align: center;
 }
 
-section, footer {
-  padding: 1rem;
+.caja {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 a {
@@ -164,8 +170,8 @@ a {
   justify-content: center;
   align-items: center;
   color: $color-neutro-oscuro;
-  font-size: 2rem;
-  // margin: 1rem 0;
+  font-size: 2em;
+  margin-top: 1em;
 
   .separador_linea {
     width: 15%;
@@ -175,6 +181,7 @@ a {
 }
 
 .btn-arriba {
+  visibility: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,6 +222,7 @@ a {
 // Bloques o secciones
 header {
   position: relative;
+  background-color: black;
 
   #img-portada {
     width: 100%;
@@ -229,7 +237,7 @@ header {
     bottom: 15%;
     left: 50%;
     transform: translateX(-50%);
-    padding: .8rem;
+    padding: 1rem;
   
     i {
       font-size: 1.4em;
@@ -243,8 +251,8 @@ header {
 }
 
 #contacto {
-  padding: 1rem;
-
+  padding: 1.5rem 0;
+  
   .contacto_info {
     color: $color-neutro-claro;
     font-style: italic
@@ -255,7 +263,7 @@ header {
 
     input, textarea {
       width: 100%;
-      margin: .5rem 0;
+      margin: .4rem 0;
       padding: .8rem;
       border: 1px solid gray;
       border-radius: 5px;
@@ -279,11 +287,15 @@ header {
     h3, p {
       margin: 0;
     }
-    
+
     h3 {
-      padding-bottom: .8rem;
+      text-transform: uppercase;
     }
 
+    p {
+      margin-top: .8rem;
+    }
+    
     button {
       margin-top: .8rem;
     }
@@ -291,6 +303,10 @@ header {
     span {
       color: #969696;
       font-style: italic;
+    }
+
+    a {
+      color: blue;
     }
   }
 }
@@ -324,6 +340,7 @@ header {
 footer {
   background-color: $color-neutro-oscuro;
   color: $color-fondo-claro;
+  padding: 1.3rem 0;
 
   .columna {
     margin-bottom: 2rem;
@@ -344,16 +361,12 @@ footer {
       font-style: italic;
     }
 
-    p {
-      margin-bottom: .5rem;
-    }
-
     span {
       color: $color-neutro-claro;
     }
   }
 
-  .separacion {
+  .footer_separacion {
     width: 80%;
     height: 1rem;
     margin: 0 auto;
@@ -367,6 +380,7 @@ footer {
 
   .copyright {
     color: $color-neutro-claro;
+    font-style: italic; 
   }
 }
 
@@ -386,10 +400,15 @@ footer {
   pointer-events: none;
 }
 
+.oculto {
+  display: none;
+}
+
 
 // 5. Fragmentos de otras paginas
 @import './atomizer';
 @import './contraIncendios';
 @import './altaPresion';
+@import './mediaQueries';
 
 // TABLA DE CONTENIDOS

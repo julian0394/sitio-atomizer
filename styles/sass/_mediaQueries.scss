@@ -1,0 +1,162 @@
+
+// OCULTAMIENTO DE BOTON 'Mostrar QR'
+@media screen and (max-width: 760px) {
+  #btn-qr-wp {
+    display: none;
+  }
+}
+
+// VISTA DE TABLET
+@media screen and (min-width: 760px) {
+  /* Permite mas espacio de caja */
+  .caja {
+    max-width: 1000px;
+  }
+
+  /* Img de portada mas grande */
+  #img-portada {
+    content: url('../../img/portada/portada-atomizer.jpg');
+    object-fit: cover;
+  }
+
+  /* Convierte cada vista de seleccion en horizontal una encima de la otra */
+  /* Cambio profundo de visual */
+  #seleccion {
+    .caja {
+      max-width: 1200px;
+    }
+
+    .opcion {
+      padding: 0;
+      width: 100%;
+      height: 25rem;
+      display: flex;
+      flex-direction: row;
+      margin-top: 2rem; 
+      border: 1px solid #e5e7e9;
+      border-radius: 15px;
+    }
+
+    .opcion-inversa {
+      flex-direction: row-reverse;
+    }
+
+    img {
+      margin: 0;
+      max-width: 65%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bloque-texto {
+      width: 45%;
+    }
+
+    /* Bordes de opcion */
+    .img-fuego {
+      border-radius: 15px 0 0 15px;
+    }
+
+    .img-agua {
+      border-radius: 0 15px 15px 0;
+    }
+
+    .txt-der {
+      border-radius: 0 15px 15px 0;
+    }
+
+    .txt-izq {
+      border-radius: 15px 0 0 15px;
+    }
+  }
+
+  #socios, 
+  #info-perez {
+    .caja {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  #socios {
+    padding: 3rem;
+
+    p, h2 {
+      margin: 0;
+    }
+
+    h2 {
+      text-align: end;
+      margin-right: 2rem;
+      line-height: 1.8rem;
+    }
+
+    p {
+      padding-bottom: 1rem;
+    }
+
+    .btn {
+      margin: 0;
+      align-self: flex-start;
+    }
+  }
+
+  #info-perez {
+    .caja {
+      max-width: 900px;
+      padding: 2rem 0;
+    }
+
+      img {
+        margin-right: 2rem;
+        margin-left: 4rem;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+  }
+
+  #contacto { /* HASTA 850px */
+    .caja {
+      max-width: 750px;
+    }
+
+    .input-chicos {
+      display: flex;
+      justify-content: space-between;
+
+      .chico {
+        width: 49%;
+      }
+    }
+
+    .contacto_items {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+
+    /* Oculta link de wp */
+    #link-wp {
+      display: none;
+    }
+  }
+
+  footer {
+    .columnas {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+       
+      .columna {
+        width: 33%;
+      }
+
+      .col-servicios {
+        padding-left: 10%;
+      } 
+    }
+  }
+} 
