@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,10 +20,86 @@
   <title>Contra incendios</title>
 </head>
 <body>
-  <div id="pag-fuego">
-    <h1>CONTRA INCENDIOS</h1>
-    <a href="index.html">VOLVER</a>
-  </div>
+  <header>
+    <img id="img-portada" src="./img/portada/portada-mobile-fuego.jpg" alt="portada con logo">
+    <a href="#contacto" class="btn btn-rojo no-select"><i class="fas fa-angle-down"></i>Conocer más</a> 
+    <a href="index.html" class="btn btn-ato no-select"><i class="fas fa-undo-alt"></i>Volver</a> 
+  </header>
+  <main>  
+    <a class="btn-arriba" href="#img-portada"><i class="fas fa-arrow-up"></i></a>   <!-- BOTON FIJO PARA IR ARRIBA -->
+    
+    <section class="separador">
+      <div class="separador_linea"></div>
+      <i class="fas fa-chevron-down"></i>
+      <div class="separador_linea"></div>
+    </section>
+
+    <section id="contacto">
+      <div class="caja">
+        <h2>Estemos en contacto</h2>
+        <p class="contacto_descripcion">Whatsapp es el método más ágil y simple. Estamos acá para ayudarte, tu consulta nunca nos molestaría.</p>
+        <div class="contacto_cuerpo">
+          <form>
+            <p class="contacto_info">* Todos los campos son requeridos.</p>
+            <input class="active-rojo" type="text" name="nombre" placeholder="Nombre" required>
+            <div class="input-chicos">
+              <input class="chico active-rojo" type="tel" name="tel" placeholder="Teléfono">
+              <input class="chico active-rojo" type="email" name="mail" placeholder="Email" required>
+            </div>
+            <textarea class="active-rojo" type="text" name="texto" placeholder="Su mensaje" required></textarea>
+            <button class="btn-relleno relleno-rojo no-selecionable">Enviar <i class="fas fa-arrow-right"></i></button>
+          </form>
+          <div class="contacto_separador"></div>
+          <div class="contacto_items">
+            <div class="contacto_item">
+              <h3 class="color-rojo">Whatsapp</h3>
+              <p><span>+54 9</span> 11 4411 - 6090</p>
+              <button id="btn-qr-wp" class="btn-relleno btn-mini relleno-rojo no-selecionable">Mostrar QR</button>
+              <p id="link-wp">Agendanos haciendo click <a href="https://wa.me/5491144116090">acá</a>.</p>
+            </div>
+            <div class="contacto_item">
+              <h3 class="color-rojo">Email</h3>
+              <p>info@atomizer.com.ar</p>
+            </div>
+            <div class="contacto_item">
+              <h3 class="color-rojo">Ubicación</h3>
+              <p>Ciudad Autónoma de Buenos Aires, <br> Argentina</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> 
+
+  <footer>
+    <div class="caja">
+      <div class="columnas">
+        <div class="columna col-ato">
+          <h4>Atomizer</h4>
+          <div class="linea"></div>
+          <p>Somos una empresa especializada en la construcción y diseño de equipos de agua a alta presión que pueden implementarse en diferentes áreas de la industria.</p>
+        </div>
+        <div class="columna col-servicios">
+          <h4>Servicios</h4>
+          <div class="linea"></div>
+          <a href="./Alta-Presion.html">Alta Presión</a>
+          <br>
+          <a class="link-footer-activo" href="./Contra-Incendios.html">Extinción</a>
+        </div>
+        <div class="columna col-contacto">
+          <h4>Contacto</h4>
+          <div class="linea"></div>
+          <p>info@atomizer.com.ar</p>
+          <p><span>+54 9</span> 11 4411 - 6090</p>
+          <p>Ciudad Autónoma de Buenos Aires. <br> Argentina.</p>
+          <a href="index.html">atomizer.com.ar</a> <!--  TAL VEZ TENGA QUE NAVEGAR A LA PORTADA ESTA VEZ  -->
+        </div>
+      </div>
+      <div class="footer_separacion"></div>
+      <p class="envios">Realizamos envíos a todo el país y América Latina.</p>
+      <p class="copyright">CopyrightⒸ 2021 - Atomizer. Todos los derechos reservados.</p>
+    </div>
+  </footer>
   
 </body>
 </html>
