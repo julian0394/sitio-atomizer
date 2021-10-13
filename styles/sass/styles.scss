@@ -7,7 +7,7 @@
     5. Fragmentos de otras paginas
 */
 
-// 1. Variables - colores
+// 1. VARIABLES - COLORES
 $color-atomizer: #239DDB;
 $color-atomizer-hover: #39a6dd;
 $color-atomizer-active: #1876a5;
@@ -25,7 +25,7 @@ $color-neutro-oscuro: #2B2B30;
 $color-neutro-claro: #73777F;
 
 
-// 2. Estilos globales generales
+// 2. ESTILOS GLOBALES GENERALES
 * {
   box-sizing: border-box; 
   font-family: 'Roboto', sans-serif;
@@ -60,7 +60,7 @@ a {
   text-decoration: none;
 }
 
-// 3. Componentes
+// 3. COMPONENTES
 .btn {
   display: inline-block;
   padding: 1rem 2rem;
@@ -114,7 +114,7 @@ a {
   padding: 1rem 1.5rem;
   border: none;
   border-radius: 5px;
-  transition: all .3s ease;
+  transition: all .2s ease;
   font-weight: bold;
   font-size: .8rem;
   text-transform: uppercase;
@@ -199,6 +199,7 @@ a {
   font-size: 1.3rem;
   cursor: pointer;
   user-select: none;
+  z-index: 9;
   transition: all .3s ease;
 
   &:active, &:focus {
@@ -219,7 +220,7 @@ a {
 
 
 
-// 4. Estilos generales y por bloques compartidos
+// 4. ESTILOS GENERALES Y POR BLOQUES COMPARTIDOS
 // Bloques o secciones
 header {
   position: relative;
@@ -231,6 +232,14 @@ header {
     object-fit: cover;
   }
 
+  // .portada_botones {
+  //   display: flex;
+  //   gap: 1rem;
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translateX(-50%);
+  // }
+
   .btn {
     position: absolute;
     display: flex;
@@ -239,6 +248,7 @@ header {
     left: 50%;
     transform: translateX(-50%);
     padding: 1rem;
+
   
     i {
       font-size: 1.4em;
@@ -269,11 +279,13 @@ header {
       border: 1px solid gray;
       border-radius: 5px;
       font-size: 18px;
+      outline: none;
     }
     
     textarea {
       resize: vertical;
       height: 6rem;
+      outline: none;
     }
   }
   
@@ -315,17 +327,17 @@ header {
 // Bordes de distintos colores según página
   .active-ato:focus { // Uso outline para que no haga el sutil salto al aumentar 1px al borde
     border: 1px solid $color-atomizer !important; 
-    outline: 1px solid $color-atomizer; 
+    box-shadow: $color-atomizer 0px 0px 2px, $color-atomizer 0px 0px 2px;
   }
   
   .active-rojo:focus {
-    border: 2px solid $color-fuego !important;
-    outline: 1px solid $color-fuego; 
+    border: 1px solid $color-fuego !important;
+    box-shadow: $color-fuego 0px 0px 2px, $color-fuego 0px 0px 2px;
   }
   
   .active-azul:focus {
-    border: 2px solid $color-agua !important;
-    outline: 1px solid $color-agua;
+    border: 1px solid $color-agua !important;
+    box-shadow: $color-agua 0px 0px 2px, $color-agua 0px 0px 2px;
   }
 
 // Colores de los títulos e íconos según página
@@ -401,9 +413,7 @@ footer {
 
 .link-footer-activo {
   font-weight: bold;
-  // text-decoration: none;
   cursor: default;
-  // cursor: text;
   pointer-events: none;
 }
 
@@ -412,7 +422,7 @@ footer {
 }
 
 
-// 5. Fragmentos de otras paginas
+// 5. FRAGMENTOS DE OTRAS PAGINAS
 @import './atomizer';
 @import './contraIncendios';
 @import './altaPresion';

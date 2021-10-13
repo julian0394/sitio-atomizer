@@ -1,0 +1,31 @@
+#cuerpo-agua,
+#cuepo-fuego {
+
+  header {
+    // display: none;
+    .portada_botones {
+      display: flex;
+      gap: 1rem;
+      // position: absolute;
+      // left: 50%;
+      // transform: translateX(-50%);
+    }
+    
+    .btn {
+      display: flex;
+      align-items: center;
+      bottom: 15%;
+      padding: 1rem;
+      
+      i {
+        font-size: 1.4em;
+        margin-right: 0.3rem;
+      }
+      
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+}
